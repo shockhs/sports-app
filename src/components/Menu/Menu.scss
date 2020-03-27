@@ -1,0 +1,88 @@
+aside {
+  grid-area: menu;
+  color: #ffffff;
+  padding: 10px 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.leagues {
+  background-color: #353942;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  &-title {
+    padding: 12px 0 12px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+  }
+  &-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0 0px 14px;
+    li {
+      display: block;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      img {
+        margin-right: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      a:hover {
+        text-decoration: none;
+        font-size: 13px;
+        color: #ffffff;
+        font-weight: 700;
+      }
+
+      .submenu-link {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.checkbox1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+label {
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+.list {
+  display: none;
+}
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked ~ .list {
+  display: block;
+}
+
+
+@media (max-width: 576px) {
+  aside {
+    display: none;
+  }
+}

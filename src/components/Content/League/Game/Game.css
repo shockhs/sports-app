@@ -1,0 +1,179 @@
+.matches-element-array {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+}
+
+.matches-element-array-item {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  height: 40px;
+  -ms-grid-columns: 10% 50% 25% 15%;
+      grid-template-columns: 10% 50% 25% 15%;
+      grid-template-areas: "time game status about";
+}
+
+.matches-element-array-item-time {
+  height: 40px;
+  width: 100%;
+  color: rgba(45, 40, 94, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: time;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.matches-element-array-item-time::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 10%;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  width: 1px;
+  background-color: rgba(52, 56, 65, 0.25);
+}
+
+.matches-element-array-item-game {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: game;
+  margin-left: 15px;
+  font-weight: 700;
+  color: #1e99c7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.matches-element-array-item-game-special {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.matches-element-array-item-game-special-favourite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.matches-element-array-item-game::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 60%;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  width: 1px;
+  background-color: rgba(52, 56, 65, 0.25);
+}
+
+.matches-element-array-item-status {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: status;
+  margin-left: 15px;
+  color: rgba(45, 40, 94, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.matches-element-array-item-status::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 85%;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  width: 1px;
+  background-color: rgba(52, 56, 65, 0.25);
+}
+
+.matches-element-array-item-about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: about;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.matches-element-array-item-about a {
+  margin-left: 15px;
+  font-weight: 700;
+  color: #1e99c7;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .matches-element-array-item-status {
+    display: none;
+  }
+  .matches-element-array-item-about {
+    display: none;
+  }
+  .matches-element-array-item {
+    -ms-grid-columns: 15% 85%;
+        grid-template-columns: 15% 85%;
+        grid-template-areas: "time game";
+  }
+  .matches-element-array-item-time::after {
+    left: 15%;
+  }
+  .matches-element-array-item-game::after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Game.css.map */

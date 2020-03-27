@@ -1,0 +1,33 @@
+.matches-element {
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  grid-template-columns: 1;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  grid-template-areas: "title" "array";
+  &-title {
+    grid-area: title;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 25px;
+    grid-template-areas: "flag league";
+    border-bottom: 1px solid rgba(53, 57, 66, .25);
+    &-flag {
+      grid-area: flag;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-league {
+      margin-left: 10px;
+      color: #353942;
+      display: flex;
+      align-items: center;
+      grid-area: league;
+    }
+  }
+  &-array {
+    grid-area: array;
+  }
+}

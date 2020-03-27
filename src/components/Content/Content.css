@@ -1,0 +1,127 @@
+main {
+  grid-area: content;
+  padding-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 65px 1fr;
+      grid-template-rows: 65px 1fr;
+      grid-template-areas: "filters" "matches";
+}
+
+.matches {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: matches;
+  padding-top: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #ffffff;
+}
+
+.filters {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: filters;
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  background-color: white;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+      grid-template-areas: "tabs date";
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.filters-tabs {
+  border-top-left-radius: 3px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tabs;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filters-tabs a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1e99c7;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  padding: 0 16px;
+}
+
+.filters-tabs a:hover {
+  color: #353942;
+  border-bottom: 2px solid #1e99c7;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.filters-tabs a.active {
+  outline: none;
+  color: #353942;
+  border-bottom: 2px solid #1e99c7;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.filters-date {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: date;
+  border-top-right-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.filters-date-content {
+  font-size: 16px;
+  margin: 0 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  main {
+    margin: 0;
+  }
+  .filters {
+    margin: 0;
+    -ms-grid-columns: 85% 15%;
+        grid-template-columns: 85% 15%;
+  }
+  .filters-tabs {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .filters-date {
+    border-top-right-radius: 3px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .filters-date-content {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Content.css.map */

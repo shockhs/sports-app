@@ -1,0 +1,115 @@
+.matches-element-array {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  &-item {
+    display: grid;
+    position: relative;
+    height: 40px;
+    grid-template-columns: 10% 50% 25% 15%;
+    grid-template-areas: "time game status about";
+    &-time {
+      height: 40px;
+      width: 100%;
+      color: rgba(45, 40, 94, 0.5);
+      display: flex;
+      grid-area: time;
+      justify-content: center;
+      align-items: center;
+    }
+    &-time::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 10%;
+      margin-left: auto;
+      align-items: center;
+      height: 80%;
+      width: 1px;
+      background-color: rgba(52, 56, 65, 0.25);
+    }
+    &-game {
+      grid-area: game;
+      margin-left: 15px;
+      font-weight: 700;
+      color: #1e99c7;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-special {
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        &-favourite {
+          display: flex;
+          align-items: center;
+          margin-left: 15px;
+          margin-right: 5px;
+        }
+      }
+    }
+    &-game::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 60%;
+      margin-left: auto;
+      align-items: center;
+      height: 80%;
+      width: 1px;
+      background-color: rgba(52, 56, 65, 0.25);
+    }
+    &-status {
+      grid-area: status;
+      margin-left: 15px;
+      color: rgba(45, 40, 94, 0.5);
+      display: flex;
+      align-items: center;
+    }
+    &-status::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 85%;
+      margin-left: auto;
+      align-items: center;
+      height: 80%;
+      width: 1px;
+      background-color: rgba(52, 56, 65, 0.25);
+    }
+    &-about {
+      grid-area: about;
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 15px;
+        font-weight: 700;
+        color: #1e99c7;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .matches-element-array-item-status {
+    display: none;
+  }
+  .matches-element-array-item-about {
+    display: none;
+  }
+  .matches-element-array-item {
+    grid-template-columns: 15% 85%;
+    grid-template-areas: "time game";
+  }
+  .matches-element-array-item-time::after {
+    left: 15%;
+  }
+  .matches-element-array-item-game::after {
+    display: none;
+  }
+}

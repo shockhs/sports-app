@@ -1,0 +1,118 @@
+aside {
+  grid-area: menu;
+  color: #ffffff;
+  padding: 10px 10px 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.leagues {
+  background-color: #353942;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.leagues-title {
+  padding: 12px 0 12px 14px;
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 1px solid white;
+}
+
+.leagues-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 12px 0 0px 14px;
+}
+
+.leagues-menu li {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.leagues-menu li img {
+  margin-right: 10px;
+}
+
+.leagues-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.leagues-menu li a:hover {
+  text-decoration: none;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.leagues-menu li .submenu-link {
+  font-weight: 400;
+}
+
+.checkbox1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+}
+
+label {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.list {
+  display: none;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked ~ .list {
+  display: block;
+}
+
+@media (max-width: 576px) {
+  aside {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Menu.css.map */
