@@ -24,7 +24,7 @@ const League = ({ location, data, currentDate, setTomorrow, setToday }) => {
             matches.push(array);
         }) // eslint-disable-next-line
         newArray = matches.map(element => {
-            if (path === 'all') { // ALL 
+            if (path === 'all' || path === '/') { // ALL 
                 gameArray = element.map(item => {
                     let timeCurrent = item.time.split(" ");
                     let day = timeCurrent[0].split("-");
