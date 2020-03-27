@@ -103,11 +103,28 @@
     display: none;
   }
   .matches-element-array-item {
-    grid-template-columns: 15% 85%;
+    overflow-x: hidden;
+    grid-template-columns: 10% 90%;
     grid-template-areas: "time game";
   }
+  .matches-element-array-item-game {
+    &-about{
+      max-width: 90%;
+    }
+      &-special {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        &-favourite {
+          display: flex;
+          align-items: center;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+    }
   .matches-element-array-item-time::after {
-    left: 15%;
+    left: 10%;
   }
   .matches-element-array-item-game::after {
     display: none;

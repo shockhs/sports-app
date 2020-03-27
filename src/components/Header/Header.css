@@ -5,13 +5,13 @@ header {
   display: grid;
   height: 64px;
   -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
+      grid-template-rows: 1fr;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-areas: "logo left right";
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "logo left right";
   -ms-grid-columns: 20% 60% 20%;
-  grid-template-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
 }
 
 nav {
@@ -20,13 +20,11 @@ nav {
 
 .logo {
   -ms-grid-row: 1;
-  grid-column: 1;
-  grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   color: #353942;
   text-align: center;
@@ -37,8 +35,6 @@ nav {
 .left-header {
   font-size: 16px;
   -ms-grid-row: 1;
-  grid-column: 1;
-  grid-row: 1;
   -ms-grid-column: 2;
   grid-area: left;
   display: -webkit-box;
@@ -46,13 +42,13 @@ nav {
   display: flex;
   margin-left: 20px;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: 27% 73%;
-  grid-template-columns: 27% 73%;
+      grid-template-columns: 27% 73%;
 }
 
 .left-header ul {
@@ -63,8 +59,8 @@ nav {
   width: 80%;
   list-style-type: none;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 16px;
   font-weight: 700;
 }
@@ -76,8 +72,8 @@ nav {
   color: #1e99c7;
   text-decoration: none;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   font-size: 16px;
   font-weight: 700;
@@ -99,16 +95,14 @@ nav {
 
 .right-header {
   -ms-grid-row: 1;
-  grid-column: 3;
-  grid-row: 1;
   -ms-grid-column: 3;
   grid-area: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .right-header-join {
@@ -136,27 +130,29 @@ input[type="text"] {
 
 @media (max-width: 576px) {
   header {
+    width: 100%;
     -ms-grid-rows: 64px;
-    grid-template-rows: 64px;
+        grid-template-rows: 64px;
     -ms-grid-columns: 20% 80%;
-    grid-template-columns: 20% 80%;
-    grid-template-areas: "nav right";
+        grid-template-columns: 20% 80%;
+        grid-template-areas: "nav right";
   }
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-grid-row: 1;
-    grid-column: 1;
-    grid-row: 1;
     -ms-grid-column: 1;
     grid-area: nav;
   }
   .logo {
     display: none;
+  }
+  .right-header {
+    margin-right: 10px;
   }
   #menuToggle {
     display: -webkit-box;
@@ -164,14 +160,14 @@ input[type="text"] {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -182,8 +178,8 @@ input[type="text"] {
     z-index: 1;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+     -ms-user-select: none;
+         user-select: none;
   }
   #menuToggle a {
     text-decoration: none;
@@ -197,10 +193,10 @@ input[type="text"] {
   #menuToggle input {
     display: block;
     -ms-grid-column-align: center;
-    justify-self: center;
+        justify-self: center;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     width: 33px;
     height: 22px;
     position: absolute;
@@ -214,10 +210,10 @@ input[type="text"] {
   #menuToggle input:checked {
     display: block;
     -ms-grid-column-align: center;
-    justify-self: center;
+        justify-self: center;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     width: 26px;
     height: 26px;
     position: absolute;
@@ -230,10 +226,10 @@ input[type="text"] {
   }
   #menuToggle span {
     -ms-grid-column-align: center;
-    justify-self: center;
+        justify-self: center;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     display: block;
     width: 33px;
     height: 4px;
@@ -242,71 +238,63 @@ input[type="text"] {
     border-radius: 3px;
     z-index: 1;
     -webkit-transform-origin: 4px 0px;
-    transform-origin: 4px 0px;
-    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      opacity 0.55s ease,
-      -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      opacity 0.55s ease,
-      -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease,
-      -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+            transform-origin: 4px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
   #menuToggle span + span {
     margin-top: 5px;
   }
   #menuToggle span:first-child {
     -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
   }
   #menuToggle span:nth-last-child(2) {
     -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
   }
   #menuToggle input:checked ~ span {
     opacity: 1;
     position: absolute;
     left: 440px;
     -webkit-transform: rotate(45deg) translate(-40px, 29px);
-    transform: rotate(45deg) translate(-40px, 29px);
+            transform: rotate(45deg) translate(-40px, 29px);
     background: #ffffff;
   }
   #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-    transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
   }
   #menuToggle input:checked ~ span:nth-last-child(2) {
     position: absolute;
     left: 440px;
     -webkit-transform: rotate(-45deg) translate(-39px, -30px);
-    transform: rotate(-45deg) translate(-39px, -30px);
+            transform: rotate(-45deg) translate(-39px, -30px);
   }
   #menu {
     position: absolute;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     margin: -100px 0 0 -50px;
-    padding: 90px 60px 0px 60px;
+    padding: 90px 60px 0px 50px;
     color: #ffffff;
     background: #353942;
     -webkit-box-shadow: 0px 2px 6px rgba(45, 40, 94, 0.06);
-    box-shadow: 0px 2px 6px rgba(45, 40, 94, 0.06);
+            box-shadow: 0px 2px 6px rgba(45, 40, 94, 0.06);
     border-radius: 3px;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
     -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
     -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
   h2 {
     display: -webkit-box;
@@ -314,8 +302,8 @@ input[type="text"] {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 40px;
     font-size: 16px;
   }
@@ -333,8 +321,8 @@ input[type="text"] {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #menu li a {
     font-weight: 700;
@@ -344,7 +332,7 @@ input[type="text"] {
   }
   #menuToggle input:checked ~ ul {
     -webkit-transform: none;
-    transform: none;
+            transform: none;
   }
   .left-header {
     display: none;

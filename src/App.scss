@@ -47,8 +47,9 @@ li {
 
 @media (max-width: 576px) {
   .container {
-    width: 100vw;
-    grid-template-columns: 100vw;
+    width: 95vw;
+    grid-template-columns: 100%;
+    margin: 0 auto;
     grid-template-rows: 64px auto;
     grid-template-areas: "header-upper" "content";
   }

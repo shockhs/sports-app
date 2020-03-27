@@ -67,7 +67,7 @@ const League = ({ location, data, currentDate, setTomorrow, setToday }) => {
                             <div className="matches-element-title-flag">
                                 <img src={Flag} alt="country flag" />
                             </div>
-                            <h4 className="matches-element-title-league">{element.league_id}</h4>
+                            <h4 className="matches-element-title-league">Англия: Премьер-лига</h4>
                         </div>
                         <div className="matches-element-array">
                             {gameArray}

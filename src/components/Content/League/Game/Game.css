@@ -165,12 +165,35 @@
     display: none;
   }
   .matches-element-array-item {
-    -ms-grid-columns: 15% 85%;
-        grid-template-columns: 15% 85%;
+    overflow-x: hidden;
+    -ms-grid-columns: 10% 90%;
+        grid-template-columns: 10% 90%;
         grid-template-areas: "time game";
   }
+  .matches-element-array-item-game-about {
+    max-width: 90%;
+  }
+  .matches-element-array-item-game-special {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .matches-element-array-item-game-special-favourite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   .matches-element-array-item-time::after {
-    left: 15%;
+    left: 10%;
   }
   .matches-element-array-item-game::after {
     display: none;
